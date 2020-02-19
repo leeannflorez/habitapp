@@ -1,0 +1,127 @@
+#testimonials {
+
+	min-height:100vh;
+
+		h2 {
+			color:$green;
+			font-size:2.4rem;
+			text-transform:uppercase;
+			text-align:center;
+			padding-top:3rem;
+		}
+
+		.quote1 {
+			background:$lightpurple;
+			padding:1.3rem;
+			font-size:1.2rem;
+			font-weight:$light;
+			margin:1.5rem;
+			border-radius:25px;
+			color:#eee;
+		}
+
+		.person1 {
+			text-align:center;
+			font-size:$subheader;
+			color:#888;
+
+			span {display:none;}
+		}
+
+		.quote2 {
+			background:$lightpurple;
+			padding:1.3rem;
+			font-size:1.2rem;
+			font-weight:$light;
+			margin:1.5rem;
+			border-radius:25px;
+			color:#eee;
+		}
+
+		.person2 {
+			text-align:center;
+			font-size:$subheader;
+			color:#888;
+
+			span {display:none;}
+		}
+
+
+
+	@media screen and (min-width: 60rem) {
+
+	height:100vh;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-template-rows:1fr 2fr 1fr;
+
+	h2 {
+		font-size:$header;
+		grid-row:1;
+		grid-column:1 / span 4;
+		align-self:end;
+		padding-top:3rem;
+
+	}
+
+	.quote1 {
+		background:$lightpurple;
+		padding:2rem;
+		text-align:center;
+		grid-row: 2;
+		grid-column:1 / span 2;
+		font-size:1.5rem;
+		font-weight:$light;
+		margin:2.8rem;
+		border-radius:25px;
+		color:#eee;
+	}
+
+	.person1 {
+		grid-column:1 / span 2;
+		text-align:center;
+		font-size:$subheader;
+		letter-spacing:.2rem;
+		color:#888;
+
+		br {
+			display:none;
+		}
+
+		span {
+			display:inline-block;
+		}
+	}
+
+		.quote2 {
+			background:$lightpurple;
+			padding:2rem;
+			text-align:center;
+			grid-row: 2;
+			grid-column:3 / span 2;
+			font-size:1.5rem;
+			font-weight:$light;
+			margin:2.8rem;
+			border-radius:25px;
+			color:#eee;
+	}
+
+		.person2 {
+			grid-column:3 / span 2;
+			text-align:center;
+			font-size:$subheader;
+			letter-spacing:.2rem;
+			color:#888;
+
+		br {
+			display:none;
+		}
+
+		span {
+			display:inline-block;
+		}
+	}
+
+}
+
+}

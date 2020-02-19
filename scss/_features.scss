@@ -1,0 +1,67 @@
+#features {
+
+	height:100vh;
+
+	.cellmockup {
+		text-align:center;
+
+		img {
+			width:60%;
+		}
+	}
+
+		h2 {
+		color:$green;
+		font-size:2.4rem;
+		text-align:center;
+		text-transform:uppercase;
+		padding: 3rem 0 0;
+	}
+
+		ul {
+			list-style:none;
+			font-size:1.2rem;
+			padding:0rem 2rem;
+
+			li {
+				padding:.5rem 0;
+			}
+		}
+
+
+
+
+
+	@media screen and (min-width: 60em){
+
+	height:100vh;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-template-rows:1fr 1fr 1fr;
+
+	.cellmockup {
+		grid-row:1 / span 3;
+		justify-self: end;
+		align-self: center;
+
+
+	}
+
+	h2 {
+		font-size:$header;
+		grid-row:1;
+		grid-column:2 / span 4;
+		align-self:end;
+	}
+
+	ul {
+		font-size:2.3rem;
+		grid-column:2 / span 2;
+		font-weight:$light;
+		line-height:3.5rem;
+		list-style: none;
+	}
+
+
+}
+}

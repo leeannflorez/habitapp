@@ -1,0 +1,79 @@
+#faqs {
+
+  text-align:center;
+    min-height:100vh;
+
+    h2 {
+      color:$green;
+      font-size:2.4rem;
+      text-transform:uppercase;
+      text-align:center;
+      padding-top:3rem;
+    }
+
+    .accordion {
+      background-color: $purple;
+      color: $verylightgrey;
+      margin-bottom:1rem;
+      border-radius:10px;
+      border:0;
+      width:95%;
+    }
+
+    .panel {
+      margin-bottom:1rem;
+      padding:1rem 1.5rem;
+    }
+
+
+
+    @media screen and (min-width: 60rem) {
+
+	min-height:100vh;
+
+
+	h2 {
+		color:$green;
+		font-size:$header;
+		text-transform:uppercase;
+		grid-row:1;
+		grid-column:1 / span 4;
+		align-self:end;
+		text-align:center;
+	}
+
+
+.accordion {
+  background-color: $purple;
+  color: $verylightgrey;
+  cursor: pointer;
+  padding: 1.2rem;
+  width: 60%;
+  display:block;
+  margin:0 auto;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: $subheader;
+  transition: 0.3s;
+  margin-bottom:1rem;
+  border-radius:25px;
+}
+
+.active, .accordion:hover {
+  background-color: $lightpurple; 
+  color:$darkgrey;
+}
+
+.panel {
+	width:60%;
+  padding: 2rem;
+  margin:0 auto;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  font-size:1.4rem;
+  font-weight:$light;
+}
+}
+}
